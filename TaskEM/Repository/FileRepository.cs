@@ -9,7 +9,7 @@ using System.IO;
 
 namespace TaskEM.Repository
 {
-    internal class FileRepository
+    internal class FileRepository : IFIleRepository
     {
         public List<DeliveryOrder> ReadFile(string path)
         {
@@ -45,7 +45,7 @@ namespace TaskEM.Repository
                 .RuleFor(x => x.District, x => GetRandomDistrict())
                 .RuleFor(x => x.Time, x => x.Date.Between(new DateTime(2024, 10, 1), DateTime.Now));
 
-            return faker.Generate(100000).ToList();
+            return faker.Generate(10).ToList();
         }
         private string GetRandomDistrict()
         {
