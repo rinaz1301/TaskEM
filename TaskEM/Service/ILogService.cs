@@ -8,6 +8,7 @@ namespace TaskEM.Service
 {
     internal interface ILogService
     {
-        void Log(string path);
+        void Log(string message);
+        void LogError(string message);
     }
 }

@@ -19,18 +19,11 @@ namespace TaskEM.Model
         }
         public void ToModel(string text)
         {
-            try
-            {
-                string[] elems = text.Split(' ');
-                OrderId = Convert.ToInt32(elems[0]);
-                Weight = Convert.ToDouble(elems[1]);
-                District = elems[2];
-                Time = Convert.ToDateTime(elems[3] + " " + elems[4]);
-            }
-            catch(FormatException ex)
-            {
-
-            }
+            string[] elems = text.Split(' ');
+            OrderId = Convert.ToInt32(elems[0]);
+            Weight = Convert.ToDouble(elems[1]);
+            District = elems[2];
+            Time = Convert.ToDateTime(elems[3] + " " + elems[4]);
         }
     }
 }

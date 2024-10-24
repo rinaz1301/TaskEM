@@ -8,11 +8,25 @@ namespace TaskEM.Service
 {
     internal class LogService : ILogService
     {
-        public void Log(string path)
+        string logFilePath;
+        public LogService(string path)
         {
-            using (var logFile = new StreamWriter(path))
+            logFilePath = path;
+        }
+
+        public void Log(string message)
+        {
+            using (var logFile = new StreamWriter(logFilePath, true))
             {
-                logFile.WriteLine("dfdf\n");
+                logFile.WriteLine($"[{DateTime.Now}] {message}");
+            }
+        }
+        public void LogError(string message)
+        {
+            using (var logFile = new StreamWriter(logFilePath, true))
+            {
+                logFile.WriteLine($"[{DateTime.Now}] Ошибка: {message}");
+                Console.WriteLine($"Ошибка: {message}");
             }
         }
     }

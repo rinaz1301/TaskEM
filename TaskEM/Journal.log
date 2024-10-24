@@ -1,1 +1,26 @@
-dfdf
+[24.10.2024 10:42:34] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.
+[24.10.2024 10:43:23] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.   at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:45:02] Ошибка: System.Private.CoreLib   at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:45:20] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.   at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:47:11] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'. 
+[24.10.2024 10:47:36] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.    at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:48:09] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.    at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:50:44] Ошибка: The string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.    at System.Convert.ToDateTime(String value)
+   at TaskEM.Model.DeliveryOrder.ToModel(String text) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Model\DeliveryOrder.cs:line 26
+   at TaskEM.Repository.FileRepository.ReadFile(String path) in C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\Repository\FileRepository.cs:line 32
+[24.10.2024 10:56:36] Ошибка: Could not find file 'C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\DeliveryOrders.txt23'. 
+[24.10.2024 10:58:43] Ошибка: C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\DeliveryOrders.txt файл не найден. 
+[24.10.2024 11:00:09] Ошибка: C:\Users\RSagdeev.KMPO\source\repos\TaskEM\TaskEM\DeliveryOrders.txt файл не найден.
+[24.10.2024 11:02:30] Ошибка: Неправильный формат файла для чтения
+[24.10.2024 11:02:44] Ошибка: Неправильный формат файла для чтенияThe string 'Заречный 17.10.2024' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.
+[24.10.2024 11:03:03] Ошибка: Неправильный формат файла для чтенияInput string was not in a correct format.

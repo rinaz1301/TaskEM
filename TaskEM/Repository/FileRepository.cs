@@ -6,23 +6,41 @@ using System.Text;
 using System.Threading.Tasks;
 using TaskEM.Model;
 using System.IO;
+using TaskEM.Service;
 
 namespace TaskEM.Repository
 {
     internal class FileRepository : IFIleRepository
     {
+        ILogService _logService;
+        public FileRepository(ILogService logService)
+        {
+            _logService = logService;
+        }
+
         public List<DeliveryOrder> ReadFile(string path)
         {
             List<DeliveryOrder> resultList = new List<DeliveryOrder>();
-            using (var inFile = new StreamReader(path))
+            try
             {
-                string line;
-                while((line = inFile.ReadLine()) != null)
+                using (var inFile = new StreamReader(path))
                 {
-                    DeliveryOrder deliveryOrder = new DeliveryOrder();
-                    deliveryOrder.ToModel(line);
-                    resultList.Add(deliveryOrder);
+                    string line;
+                    while ((line = inFile.ReadLine()) != null)
+                    {
+                        DeliveryOrder deliveryOrder = new DeliveryOrder();
+                        deliveryOrder.ToModel(line);
+                        resultList.Add(deliveryOrder);
+                    }
                 }
+            }
+            catch(FileNotFoundException ex)
+            {
+                _logService.LogError(path + " файл не найден.");
+            }
+            catch(Exception ex)
+            {
+                _logService.LogError("Неправильный формат файла для чтения" + ex.Message);
             }
             return resultList;
         }
